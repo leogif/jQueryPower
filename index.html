@@ -11,8 +11,10 @@
 	</style>
 	<meta charset="UTF-8">
 	<title>Desenvolvimento de Sistemas Web</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
+
 	<center>
 		<input type="button" value="Esconder" id="hideButton"/>
 		<input type="button" value="Mostrar" id="showButton"/>
@@ -23,11 +25,15 @@
 	 	  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			crossorigin="anonymous">
 	</script>
-
+	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous">
+		
+	</script>
 	<script>
 		$('#hideButton').click(function(){
 			$('#box').slideUp();
 		});
+		
 		$('#showButton').click(function(){
 			$('#box').slideDown();
 		});
