@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<style>
+		#box {
+			background-color: #5522ff;
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<title>Desenvolvimento de Sistemas Web</title>
+</head>
+<body>
+	<input type="button" value="Hide" id="hideButton"/>
+	<input type="button" value="Show" id="showButton"/>
+	<br/><br/>
+	<div id="box">
+		
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	 	  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous">
+	</script>
+
+	<script>
+		$('#hideButton').click(function(){
+			$('#box').slideUp();
+		});
+		$('#showButton').click(function(){
+			$('#box').slideDown();
+		});
+	</script>
+</body>
+</html>
